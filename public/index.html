@@ -96,14 +96,6 @@
             }
         });
 
-        function atacar(jogador) {
-            socket.emit('attack', {jogador:jogador.id})
-        }
-
-        function move() {
-            socket.emit('move', {x,y,z});
-        }
-
         function enviarMensagem() {
             let text = $("#mensagem").val();
             if (text.length == 0) return;
